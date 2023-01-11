@@ -89,7 +89,7 @@ app.post("/delete",function(req,res){
 
 })
 */
-app.listen(3000,function(){
+app.listen(process.env.PORT||3000,function(){
     console.log("server Working")
  }); 
 module.exports=app;//for vercel to turn express into a serverless funtion 
